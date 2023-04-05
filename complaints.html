@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>HRMS</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/feather/style.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="vendors/editor2/dist/themes/flat/style.css" />
+</head>
+
+<body data-col="2-columns" class=" 2-columns ">
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="wrapper">
+        <!-- main menu-->
+        <!--.main-menu(class="#{menuColor} #{menuOpenType}", class=(menuShadow == true ? 'menu-shadow' : ''))-->
+        <div data-active-color="white" data-background-color="purple-bliss" data-image="img/sidebar-bg/01.jpg" class="app-sidebar">
+            <!-- main menu header-->
+            <!-- Sidebar Header starts-->
+            <div class="sidebar-header">
+                <div class="logo clearfix">
+                    <a href="index.html" class="logo-text float-left">
+                        <div class="logo-img"></div>
+                        <span class="text align-middle">HRMS</span>
+                    </a>
+                    <a id="sidebarToggle" href="javascript:;" class="nav-toggle d-none d-sm-none d-md-none d-lg-block"><i data-toggle="expanded" class="toggle-icon ft-toggle-right"></i></a>
+                    <a id="sidebarClose" href="javascript:;" class="nav-close d-block d-md-block d-lg-none d-xl-none"><i class="ft-x"></i></a>
+                </div>
+            </div>
+            <!-- Sidebar Header Ends-->
+            <!-- / main menu header-->
+            <!-- main menu content-->
+            <div class="sidebar-content">
+                <div class="nav-container">
+                   <ul id="main-menu-navigation" data-menu="menu-navigation" data-scroll-to-active="true" class="navigation navigation-main">
+                        <li class="has-sub nav-item"><a href="index.html" class="anch"><i class="ft-home"></i><span data-i18n="" class="menu-title">Dashboard</span></a>
+                        </li>
+                        
+                         <li class="has-sub nav-item"><a href="#"><i class="fa fa-building-o"></i><span data-i18n="" class="menu-title">Organization</span></a>
+                            <ul class="menu-content">
+                              <li><a href="company.html" class="menu-item">Company</a>
+                              </li>
+                              <li><a href="location.html" class="menu-item">Location</a>
+                              </li>
+                              <li><a href="department.html" class="menu-item">Department</a>
+                              </li>
+                              <li><a href="designation.html" class="menu-item">Designation</a>
+                              </li>
+                              <li><a href="announcement.html" class="menu-item">Announcement</a>
+                              </li>
+                              <li><a href="policies.html" class="menu-item">Policies</a>
+                              </li>
+                              <li><a href="expense.html" class="menu-item">Expense</a>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="fa fa-user-o"></i><span data-i18n="" class="menu-title">Employees</span></a>
+                            <ul class="menu-content">
+                              <li><a href="time&attendance.html" class="menu-item">Time&Attendance</a>
+                              </li>
+                              <li><a href="set-roles.html" class="menu-item">Set Roles</a>
+                              </li>
+                              <li><a href="leave.html" class="menu-item">Leave</a>
+                              </li>
+                              <li><a href="awards.html" class="menu-item">Awards</a>
+                              </li>
+                              <li><a href="transfer.html" class="menu-item">Transfers</a>
+                              </li>
+                              <li><a href="resignation.html" class="menu-item">Resignations</a>
+                              </li>
+                              <li><a href="travels.html" class="menu-item">Travels</a>
+                              </li>
+                              <li><a href="promotions.html" class="menu-item">Promotions</a>
+                              </li>
+                              <li class="active"><a href="complaints.html" class="menu-item">Complaints</a>
+                              </li>
+                              <li><a href="disciplinary_actions.html" class="menu-item">Disciplinary Actions</a>
+                              </li>
+                              <li><a href="termination.html" class="menu-item">Terminations</a>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class=" nav-item"><a href="#"><i class="fa fa-users"></i><span data-i18n="" class="menu-title">Performance</span></a>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="fa fa-clock-o"></i><span data-i18n="" class="menu-title">Timesheet</span></a>
+                            <ul class="menu-content">
+                              <li><a href="attendance.html" class="menu-item">Attendance</a>
+                              </li>
+                              <li><a href="date_wise_attendance.html" class="menu-item">Date Wise Attendance</a>
+                              </li>
+                              <li><a href="update_attendance.html" class="menu-item">Update Attendance</a>
+                              </li>
+                              <li><a href="import_attendance.html" class="menu-item">Import Attendance</a>
+                              </li>
+                              <li><a href="timesheet_leave.html" class="menu-item">Leaves</a>
+                              </li>
+                              <li><a href="office_shifts.html" class="menu-item">Office Shifts</a>
+                              </li>
+                              <li><a href="holidays.html" class="menu-item">Holidays</a>
+                              </li>
+                              <li><a href="Projects.html" class="menu-item">Project</a>
+                              </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="fa fa-list-alt"></i><span data-i18n="" class="menu-title">Payroll</span></a>
+                            <ul class="menu-content">
+                              <li><a href="payroll_template.html" class="menu-item">Payroll Templates</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Manage Salary</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Allowances</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Deductions</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Salary Report</a>
+                              </li>
+                              <li><a href="#" class="menu-item">FP&Incometa Statement</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Import Files</a>
+                              </li>
+                              <li><a href="#" class="menu-item">PaySlips</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Payment History</a>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#" class="anch"><i class="fa fa-ticket"></i><span data-i18n="" class="menu-title">Projects</span></a>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="ft-box"></i><span data-i18n="" class="menu-title">Tickets</span></a>
+                            <ul class="menu-content">
+                              <li><a href="#" class="menu-item">Tickets</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Create Tickets</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Assign Tickets</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Accept&Recive</a>
+                              </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="fa fa-address-card-o"></i><span data-i18n="" class="menu-title">Recruitment</span></a>
+                            <ul class="menu-content">
+                              <li><a href="#" class="menu-item">Job Openings</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Candidates</a>
+                              </li>
+                              
+                              
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#"><i class="fa fa-graduation-cap"></i><span data-i18n="" class="menu-title">Training</span></a>
+                            <ul class="menu-content">
+                              <li><a href="#" class="menu-item">Training Requisition</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Need Analysis</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Details Of Employees</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Calendar</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Nominations</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Vendors</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Execution</a>
+                              </li>
+                              <li><a href="#" class="menu-item">Training Feedback</a>
+                              
+                            </ul>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#" class="anch"><i class="fa fa-file"></i><span data-i18n="" class="menu-title">Files Manager</span></a>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#" class="anch"><i class="fa fa-database"></i><span data-i18n="" class="menu-title">Employee Directory</span></a>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#" class="anch"><i class="fa fa-plus"></i><span data-i18n="" class="menu-title">Create Employee</span></a>
+                        </li>
+                        <li class="has-sub nav-item"><a href="#" class="anch"><i class="ft-bar-chart-2"></i><span data-i18n="" class="menu-title">Reimbursement</span></a>
+                        </li>
+                        <li class=" nav-item"><a href="#"><i class="ft-book"></i><span data-i18n="" class="menu-title">Full&Final Settlement</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- main menu content-->
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- / main menu-->
+        <!-- Navbar (Header) Starts-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded header-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="d-lg-none navbar-right navbar-collapse-toggle"><a aria-controls="navbarSupportedContent" href="javascript:;" class="open-navbar-container black"><i class="ft-more-vertical"></i></a></span>
+                    <form role="search" class="navbar-form navbar-right mt-1">
+                        <div class="position-relative has-icon-right">
+                            <input type="text" placeholder="Search" class="form-control round" />
+                            <div class="form-control-position"><i class="ft-search"></i></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-container">
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="dropdown nav-item">
+                                <a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-toggle"><i class="ft-user font-medium-3 blue-grey darken-4"></i>
+                                    <p class="d-none">User Settings</p>
+                                </a>
+                                <div ngbdropdownmenu="" aria-labelledby="dropdownBasic3" class="dropdown-menu text-left dropdown-menu-right">
+                                    <a href="#" class="dropdown-item py-1"><i class="ft-message-square mr-2"></i><span>Login</span></a>
+                                    <a href="#" class="dropdown-item py-1"><i class="ft-edit mr-2"></i><span>Edit Profile</span></a>
+                                    <a href="#" class="dropdown-item py-1"><i class="ft-mail mr-2"></i><span>My Inbox</span></a>
+                                    <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i class="ft-power mr-2"></i><span>Logout</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar (Header) Ends-->
+        <div class="main-panel">
+            <!-- BEGIN : Main Content-->
+            <div class="main-content">
+                <div class="content-wrapper">
+                    <!-- Zero configuration table -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="content-header">Complaints</div>
+                        </div>
+                    </div>
+                    <section id="configuration">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h4 class="card-title">List Of All Complaints</h4>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-outline-danger  pull-right" data-toggle="modal" data-target="#danger"><i class="fa fa-plus" aria-hidden="true" style="padding-right: 6px;"></i>Add New</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body card-dashboard table-responsive">
+                                            <table class="table table-striped table-bordered zero-configuration">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>Action</th>
+                                                        <th>Complaint From</th>
+                                                        <th>Complaint Against</th>
+                                                        <th>Complaint Title</th>
+                                                        <th>Complaint Date</th>
+                                                        <th>Approvel Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            <button type="button" class="btn btn-info bttnn">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                    <label class="custom-control-label" for="customCheck6"></label>
+                                                                </div>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger bttnn"><i class="fa fa-trash"></i></button>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr class="text-center">
+                                                        <th>Action</th>
+                                                        <th>Complaint From</th>
+                                                        <th>Complaint Against</th>
+                                                        <th>Complaint Title</th>
+                                                        <th>Complaint Date</th>
+                                                        <th>Approvel Status</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--/ Zero configuration table -->
+                </div>
+            </div>
+            <!-- END : End Main Content-->
+            <!-- BEGIN : Footer-->
+            <footer class="footer footer-static footer-light">
+                <p class="clearfix text-muted text-sm-center px-2"><span>Copyright &copy; 2019 <a href="#" target="_blank" class="text-bold-800 primary darken-2">HRMS </a>, All rights reserved. </span></p>
+            </footer>
+            <!-- End : Footer-->
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="modal-section">
+        <div class="modal fade text-left" id="danger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+            <div class="modal-dialog modal_width" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger white">
+                        <h4 class="modal-title" id="myModalLabel10">Add New Complaints</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal_frm">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                            <label for="projectinput5"> Promotion For </label>
+                                            <select id="projectinput5" name="interested" class="form-control">
+                                                <option value="none" selected="" disabled="">Choose an Employee</option>
+                                                <option value="design">design</option>
+                                                <option value="development">development</option>
+                                                <option value="illustration">illustration</option>
+                                                <option value="branding">branding</option>
+                                                <option value="video">video</option>
+                                            </select>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                 <div class="form-group">
+                                            <label for="projectinput1">Complaint Title</label>
+                                            <input type="text" id="projectinput1" class="form-control" name="fname" placeholder="Complaint Title">
+                                        </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                            <label for="projectinput1">Complaint Date</label>
+                                            <input type="date" id="projectinput1" class="form-control" name="fname">
+                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="projectinput1">Complaint Against</label>
+                                            <input type="text" id="projectinput1" class="form-control" name="fname" placeholder="Complaint Against">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h6>Description</h6>
+                                        <div class="editor">
+                                            <textarea class="edit-textareas" id="id_cazary" placeholder="full mode" style="width: 350px;min-height: 250px;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendors/js/core/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="vendors/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="vendors/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="vendors/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <script src="vendors/js/prism.min.js" type="text/javascript"></script>
+    <script src="vendors/js/jquery.matchHeight-min.js" type="text/javascript"></script>
+    <script src="vendors/js/screenfull.min.js" type="text/javascript"></script>
+    <script src="vendors/js/pace/pace.min.js" type="text/javascript"></script>
+    <script src="vendors/js/chart.min.js" type="text/javascript"></script>
+    <script src="js/app-sidebar.js" type="text/javascript"></script>
+    <script src="js/notification-sidebar.js" type="text/javascript"></script>
+    <script src="js/customizer.js" type="text/javascript"></script>
+    <script src="js/chartjs.js" type="text/javascript"></script>
+    <script src="vendors/js/datatable/datatables.min.js" type="text/javascript"></script>
+    <script src="js/data-tables/datatable-basic.js" type="text/javascript"></script>
+    <script type="text/javascript" src="vendors/editor2/dist/cazary.min.js"></script>
+    <script type="text/javascript">
+    (function($, window) {
+        $(function($) {
+            // that's it!
+            $("textarea#id_cazary").cazary();
+
+            // customized editor
+            $("textarea#id_cazary_minimal").cazary({
+                commands: "MINIMAL"
+            });
+            $("textarea#id_cazary_full").cazary({
+                commands: "FULL"
+            });
+        });
+    })(jQuery, window);
+    </script>
+</body>
+<!-- END : Body-->
+
+</html>
